@@ -2,18 +2,22 @@
 Documentation    Ações customizadas para rodar o yodapp
 
 *Keywords*
+Go To Home Page
+    Go To    ${base_url} 
+    Wait For Elements State     
+
 Go To User Form
     Click                      text=Novo
     Wait For Elements State    css=.card-header-title >> text=Cadastrar novo usuário    visible    5
 
 Fill User Form
-    [Arguments]    ${name}    ${email}    ${ordem}    ${bdate}    ${insta}
+    [Arguments]    ${user} 
 
-    Fill Text            css=input[name="nome"]     ${name} 
-    Fill Text            css=input[name="email"]    ${email}
-    Select Options By    css=.ordem select          text        ${ordem}
-    Select Birth Date    ${bdate}
-    Fill Text            id=insta                   ${insta}
+    Fill Text            css=input[name="nome"]     ${user}[name]
+    Fill Text            css=input[name="email"]    ${user}[email]
+    Select Options By    css=.ordem select          text              ${user}[ordem]
+    Select Birth Date    ${user}[bdate]
+    Fill Text            id=insta                   ${user}[insta]
 
 Select Jedi
     [Arguments]    ${tpjedi}
@@ -25,8 +29,8 @@ Check Accept Comunications
 
 Select Birth Date
     [Arguments]    ${text_date}
-    @{date}        Split String    ${text_date}    -
 
+    @{date}    Split String    ${text_date}    -
 
     Click                css=input[name="Data de nascimento"]
     Select Options By    xpath=(//header[@class="datepicker-header"]//select)[1]                      text    ${date}[0]    
@@ -39,4 +43,7 @@ Submit User Form
 Toaster Message Should Be
     [Arguments]    ${expected_message}
 
-    Wait For Elements State    css=.toast div >> text=${expected_message}    visible    5
+    ${element}    Set Variable    css=.toast div
+
+    Wait For Elements State    ${element}    visible    5
+    Get Text                   ${element}    equal      ${expected_message}

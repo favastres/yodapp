@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211202 15:43:54.011" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211203 14:21:35.559" rpa="false" schemaversion="2">
 <suite id="s1" name="Tests" source="C:\Projects\yodapp\tests">
 <suite id="s1-s1" name="Cadastro" source="C:\Projects\yodapp\tests\cadastro.robot">
 <test id="s1-s1-t1" name="Cadastrar um novo personagem">
@@ -10,19 +10,19 @@
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<msg timestamp="20211202 15:43:54.735" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\Projects\\yodapp\\logs\\browser\\traces\\4a2086e7-8fa0-4942-90ed-71f209454211"}</msg>
-<msg timestamp="20211202 15:43:55.007" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\Projects\\yodapp\\logs\\browser\\traces\\4a2086e7-8fa0-4942-90ed-71f209454211"}</msg>
-<status status="PASS" starttime="20211202 15:43:54.734" endtime="20211202 15:43:55.008"/>
+<msg timestamp="20211203 14:21:36.992" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\Projects\\yodapp\\logs\\browser\\traces\\dca20a77-d578-4380-9456-d4b9fb5a1ef0"}</msg>
+<msg timestamp="20211203 14:21:38.047" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\Projects\\yodapp\\logs\\browser\\traces\\dca20a77-d578-4380-9456-d4b9fb5a1ef0"}</msg>
+<status status="PASS" starttime="20211203 14:21:36.992" endtime="20211203 14:21:38.048"/>
 </kw>
 <kw name="New Context" library="Browser">
 <arg>viewport={'width': 1920, 'height': 1080}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<msg timestamp="20211202 15:43:55.010" level="INFO">{"acceptDownloads": false, "ignoreHTTPSErrors": false, "bypassCSP": false, "viewport": {"width": 1920, "height": 1080}, "deviceScaleFactor": 1.0, "isMobile": false, "hasTouch": false, "javaScriptEnabled": true, "offline": false, "hideRfBrowser": false}</msg>
-<msg timestamp="20211202 15:43:55.024" level="INFO">Successfully created context. </msg>
-<msg timestamp="20211202 15:43:55.024" level="INFO">{'acceptDownloads': False, 'ignoreHTTPSErrors': False, 'bypassCSP': False, 'viewport': {'width': 1920, 'height': 1080}, 'deviceScaleFactor': 1, 'isMobile': False, 'hasTouch': False, 'javaScriptEnabled': True, 'offline': False, 'hideRfBrowser': False}</msg>
-<status status="PASS" starttime="20211202 15:43:55.008" endtime="20211202 15:43:55.025"/>
+<msg timestamp="20211203 14:21:38.048" level="INFO">{"acceptDownloads": false, "ignoreHTTPSErrors": false, "bypassCSP": false, "viewport": {"height": 1080, "width": 1920}, "deviceScaleFactor": 1.0, "isMobile": false, "hasTouch": false, "javaScriptEnabled": true, "offline": false, "hideRfBrowser": false}</msg>
+<msg timestamp="20211203 14:21:38.081" level="INFO">Successfully created context. </msg>
+<msg timestamp="20211203 14:21:38.081" level="INFO">{'acceptDownloads': False, 'ignoreHTTPSErrors': False, 'bypassCSP': False, 'viewport': {'height': 1080, 'width': 1920}, 'deviceScaleFactor': 1, 'isMobile': False, 'hasTouch': False, 'javaScriptEnabled': True, 'offline': False, 'hideRfBrowser': False}</msg>
+<status status="PASS" starttime="20211203 14:21:38.048" endtime="20211203 14:21:38.081"/>
 </kw>
 <kw name="New Page" library="Browser">
 <arg>https://yodapp-testing.vercel.app</arg>
@@ -31,10 +31,15 @@
 <doc>Open a new Page. A Page is the Playwright equivalent to a tab.
 See `Browser, Context and Page` for more information about Page concept.
 Returns a stable identifier for the created page.</doc>
-<msg timestamp="20211202 15:43:55.777" level="INFO">Successfully initialized new page object and opened url: https://yodapp-testing.vercel.app</msg>
-<status status="PASS" starttime="20211202 15:43:55.025" endtime="20211202 15:43:55.777"/>
+<msg timestamp="20211203 14:21:40.604" level="INFO">Successfully initialized new page object and opened url: https://yodapp-testing.vercel.app</msg>
+<status status="PASS" starttime="20211203 14:21:38.081" endtime="20211203 14:21:40.604"/>
 </kw>
-<status status="PASS" starttime="20211202 15:43:54.734" endtime="20211202 15:43:55.778"/>
+<status status="PASS" starttime="20211203 14:21:36.992" endtime="20211203 14:21:40.604"/>
+</kw>
+<kw name="Factory Yoda" library="users">
+<var>${user}</var>
+<msg timestamp="20211203 14:21:40.605" level="INFO">${user} = {'name': 'Mestre Yoda', 'email': 'yodinha@jedi.com', 'ordem': 'Jedi', 'tpjedi': 'Cavaleiro Jedi', 'bdate': 'fevereiro-1970-20', 'insta': '@yodinha'}</msg>
+<status status="PASS" starttime="20211203 14:21:40.605" endtime="20211203 14:21:40.605"/>
 </kw>
 <kw name="Go To User Form" library="actions">
 <kw name="Click" library="Browser">
@@ -42,7 +47,7 @@ Returns a stable identifier for the created page.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20211202 15:43:55.779" endtime="20211202 15:43:55.892"/>
+<status status="PASS" starttime="20211203 14:21:40.606" endtime="20211203 14:21:40.683"/>
 </kw>
 <kw name="Wait For Elements State" library="Browser">
 <arg>css=.card-header-title &gt;&gt; text=Cadastrar novo usuário</arg>
@@ -51,60 +56,56 @@ Returns a stable identifier for the created page.</doc>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20211202 15:43:56.051" level="INFO">Waited for Element with selector css=.card-header-title &gt;&gt; text=Cadastrar novo usuário at state visible</msg>
-<status status="PASS" starttime="20211202 15:43:55.893" endtime="20211202 15:43:56.051"/>
+<msg timestamp="20211203 14:21:40.850" level="INFO">Waited for Element with selector css=.card-header-title &gt;&gt; text=Cadastrar novo usuário at state visible</msg>
+<status status="PASS" starttime="20211203 14:21:40.683" endtime="20211203 14:21:40.850"/>
 </kw>
-<status status="PASS" starttime="20211202 15:43:55.778" endtime="20211202 15:43:56.051"/>
+<status status="PASS" starttime="20211203 14:21:40.606" endtime="20211203 14:21:40.850"/>
 </kw>
 <kw name="Fill User Form" library="actions">
-<arg>Mestre Yoda</arg>
-<arg>yodinha@jedi.com</arg>
-<arg>Jedi</arg>
-<arg>fevereiro-1970-20</arg>
-<arg>@yodinha</arg>
+<arg>${user}</arg>
 <kw name="Fill Text" library="Browser">
 <arg>css=input[name="nome"]</arg>
-<arg>${name}</arg>
+<arg>${user}[name]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211202 15:43:56.052" level="INFO">Fills the text 'Mestre Yoda' in the given field.</msg>
-<status status="PASS" starttime="20211202 15:43:56.052" endtime="20211202 15:43:56.073"/>
+<msg timestamp="20211203 14:21:40.851" level="INFO">Fills the text 'Mestre Yoda' in the given field.</msg>
+<status status="PASS" starttime="20211203 14:21:40.851" endtime="20211203 14:21:40.874"/>
 </kw>
 <kw name="Fill Text" library="Browser">
 <arg>css=input[name="email"]</arg>
-<arg>${email}</arg>
+<arg>${user}[email]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211202 15:43:56.073" level="INFO">Fills the text 'yodinha@jedi.com' in the given field.</msg>
-<status status="PASS" starttime="20211202 15:43:56.073" endtime="20211202 15:43:56.092"/>
+<msg timestamp="20211203 14:21:40.874" level="INFO">Fills the text 'yodinha@jedi.com' in the given field.</msg>
+<status status="PASS" starttime="20211203 14:21:40.874" endtime="20211203 14:21:40.892"/>
 </kw>
 <kw name="Select Options By" library="Browser">
 <arg>css=.ordem select</arg>
 <arg>text</arg>
-<arg>${ordem}</arg>
+<arg>${user}[ordem]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Selects options from select element found by ``selector``.</doc>
-<status status="PASS" starttime="20211202 15:43:56.092" endtime="20211202 15:43:56.108"/>
+<status status="PASS" starttime="20211203 14:21:40.893" endtime="20211203 14:21:40.909"/>
 </kw>
 <kw name="Select Birth Date" library="actions">
-<arg>${bdate}</arg>
+<arg>${user}[bdate]</arg>
 <kw name="Split String" library="String">
 <var>@{date}</var>
 <arg>${text_date}</arg>
 <arg>-</arg>
 <doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
-<msg timestamp="20211202 15:43:56.119" level="INFO">@{date} = [ fevereiro | 1970 | 20 ]</msg>
-<status status="PASS" starttime="20211202 15:43:56.118" endtime="20211202 15:43:56.119"/>
+<msg timestamp="20211203 14:21:40.910" level="INFO">@{date} = [ fevereiro | 1970 | 20 ]</msg>
+<status status="PASS" starttime="20211203 14:21:40.910" endtime="20211203 14:21:40.910"/>
 </kw>
 <kw name="Click" library="Browser">
 <arg>css=input[name="Data de nascimento"]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20211202 15:43:56.119" endtime="20211202 15:43:56.227"/>
+<status status="PASS" starttime="20211203 14:21:40.910" endtime="20211203 14:21:41.011"/>
 </kw>
 <kw name="Select Options By" library="Browser">
 <arg>xpath=(//header[@class="datepicker-header"]//select)[1]</arg>
@@ -113,7 +114,7 @@ Returns a stable identifier for the created page.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Selects options from select element found by ``selector``.</doc>
-<status status="PASS" starttime="20211202 15:43:56.227" endtime="20211202 15:43:56.246"/>
+<status status="PASS" starttime="20211203 14:21:41.011" endtime="20211203 14:21:41.036"/>
 </kw>
 <kw name="Select Options By" library="Browser">
 <arg>xpath=(//header[@class="datepicker-header"]//select)[2]</arg>
@@ -122,38 +123,38 @@ Returns a stable identifier for the created page.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Selects options from select element found by ``selector``.</doc>
-<status status="PASS" starttime="20211202 15:43:56.246" endtime="20211202 15:43:56.262"/>
+<status status="PASS" starttime="20211203 14:21:41.036" endtime="20211203 14:21:41.052"/>
 </kw>
 <kw name="Click" library="Browser">
 <arg>xpath=//a[contains(@class, "datepicker-cell")]//span[text()="${date}[2]"]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20211202 15:43:56.262" endtime="20211202 15:43:56.314"/>
+<status status="PASS" starttime="20211203 14:21:41.053" endtime="20211203 14:21:41.110"/>
 </kw>
-<status status="PASS" starttime="20211202 15:43:56.108" endtime="20211202 15:43:56.314"/>
+<status status="PASS" starttime="20211203 14:21:40.910" endtime="20211203 14:21:41.110"/>
 </kw>
 <kw name="Fill Text" library="Browser">
 <arg>id=insta</arg>
-<arg>${insta}</arg>
+<arg>${user}[insta]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211202 15:43:56.314" level="INFO">Fills the text '@yodinha' in the given field.</msg>
-<status status="PASS" starttime="20211202 15:43:56.314" endtime="20211202 15:43:56.338"/>
+<msg timestamp="20211203 14:21:41.110" level="INFO">Fills the text '@yodinha' in the given field.</msg>
+<status status="PASS" starttime="20211203 14:21:41.110" endtime="20211203 14:21:41.131"/>
 </kw>
-<status status="PASS" starttime="20211202 15:43:56.052" endtime="20211202 15:43:56.338"/>
+<status status="PASS" starttime="20211203 14:21:40.850" endtime="20211203 14:21:41.131"/>
 </kw>
 <kw name="Select Jedi" library="actions">
-<arg>Cavaleiro Jedi</arg>
+<arg>${user}[tpjedi]</arg>
 <kw name="Click" library="Browser">
 <arg>xpath=//input[@value="${tpjedi}"]/..//span[@class="check"]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20211202 15:43:56.341" endtime="20211202 15:43:56.392"/>
+<status status="PASS" starttime="20211203 14:21:41.132" endtime="20211203 14:21:41.186"/>
 </kw>
-<status status="PASS" starttime="20211202 15:43:56.340" endtime="20211202 15:43:56.392"/>
+<status status="PASS" starttime="20211203 14:21:41.132" endtime="20211203 14:21:41.187"/>
 </kw>
 <kw name="Check Accept Comunications" library="actions">
 <kw name="Click" library="Browser">
@@ -161,9 +162,9 @@ Returns a stable identifier for the created page.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20211202 15:43:56.393" endtime="20211202 15:43:56.477"/>
+<status status="PASS" starttime="20211203 14:21:41.189" endtime="20211203 14:21:41.276"/>
 </kw>
-<status status="PASS" starttime="20211202 15:43:56.392" endtime="20211202 15:43:56.477"/>
+<status status="PASS" starttime="20211203 14:21:41.188" endtime="20211203 14:21:41.276"/>
 </kw>
 <kw name="Submit User Form" library="actions">
 <kw name="Click" library="Browser">
@@ -171,35 +172,52 @@ Returns a stable identifier for the created page.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20211202 15:43:56.478" endtime="20211202 15:43:56.531"/>
+<status status="PASS" starttime="20211203 14:21:41.277" endtime="20211203 14:21:41.328"/>
 </kw>
-<status status="PASS" starttime="20211202 15:43:56.478" endtime="20211202 15:43:56.531"/>
+<status status="PASS" starttime="20211203 14:21:41.276" endtime="20211203 14:21:41.329"/>
 </kw>
 <kw name="Toaster Message Should Be" library="actions">
 <arg>Usuário cadastrado com sucesso!</arg>
+<kw name="Set Variable" library="BuiltIn">
+<var>${element}</var>
+<arg>css=.toast div</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20211203 14:21:41.329" level="INFO">${element} = css=.toast div</msg>
+<status status="PASS" starttime="20211203 14:21:41.329" endtime="20211203 14:21:41.329"/>
+</kw>
 <kw name="Wait For Elements State" library="Browser">
-<arg>css=.toast div &gt;&gt; text=${expected_message}</arg>
+<arg>${element}</arg>
 <arg>visible</arg>
 <arg>5</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20211202 15:43:56.542" level="INFO">Waited for Element with selector css=.toast div &gt;&gt; text=Usuário cadastrado com sucesso! at state visible</msg>
-<status status="PASS" starttime="20211202 15:43:56.532" endtime="20211202 15:43:56.542"/>
+<msg timestamp="20211203 14:21:41.336" level="INFO">Waited for Element with selector css=.toast div at state visible</msg>
+<status status="PASS" starttime="20211203 14:21:41.329" endtime="20211203 14:21:41.336"/>
 </kw>
-<status status="PASS" starttime="20211202 15:43:56.531" endtime="20211202 15:43:56.542"/>
+<kw name="Get Text" library="Browser">
+<arg>${element}</arg>
+<arg>equal</arg>
+<arg>${expected_message}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20211203 14:21:41.336" endtime="20211203 14:21:41.349"/>
+</kw>
+<status status="PASS" starttime="20211203 14:21:41.329" endtime="20211203 14:21:41.349"/>
 </kw>
 <kw name="End Session" library="base" type="TEARDOWN">
 <kw name="Take Screenshot" library="Browser">
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20211202 15:43:56.719" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211202 15:43:56.542" endtime="20211202 15:43:56.719"/>
+<msg timestamp="20211203 14:21:41.553" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211203 14:21:41.350" endtime="20211203 14:21:41.553"/>
 </kw>
-<status status="PASS" starttime="20211202 15:43:56.542" endtime="20211202 15:43:56.719"/>
+<status status="PASS" starttime="20211203 14:21:41.349" endtime="20211203 14:21:41.554"/>
 </kw>
 <tag>happy</tag>
-<status status="PASS" starttime="20211202 15:43:54.732" endtime="20211202 15:43:56.720"/>
+<status status="PASS" starttime="20211203 14:21:36.990" endtime="20211203 14:21:41.555"/>
 </test>
 <test id="s1-s1-t2" name="E-mail incorreto">
 <kw name="Start Session" library="base" type="SETUP">
@@ -209,19 +227,19 @@ Returns a stable identifier for the created page.</doc>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<msg timestamp="20211202 15:43:56.794" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\Projects\\yodapp\\logs\\browser\\traces\\9e8f4187-6e0e-4bd4-9f7a-56c70d060967"}</msg>
-<msg timestamp="20211202 15:43:57.078" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\Projects\\yodapp\\logs\\browser\\traces\\9e8f4187-6e0e-4bd4-9f7a-56c70d060967"}</msg>
-<status status="PASS" starttime="20211202 15:43:56.794" endtime="20211202 15:43:57.078"/>
+<msg timestamp="20211203 14:21:41.635" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\Projects\\yodapp\\logs\\browser\\traces\\ccd7025f-f593-45cd-b6d4-c2ecb62b7c5c"}</msg>
+<msg timestamp="20211203 14:21:41.943" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\Projects\\yodapp\\logs\\browser\\traces\\ccd7025f-f593-45cd-b6d4-c2ecb62b7c5c"}</msg>
+<status status="PASS" starttime="20211203 14:21:41.633" endtime="20211203 14:21:41.943"/>
 </kw>
 <kw name="New Context" library="Browser">
 <arg>viewport={'width': 1920, 'height': 1080}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<msg timestamp="20211202 15:43:57.079" level="INFO">{"acceptDownloads": false, "ignoreHTTPSErrors": false, "bypassCSP": false, "viewport": {"width": 1920, "height": 1080}, "deviceScaleFactor": 1.0, "isMobile": false, "hasTouch": false, "javaScriptEnabled": true, "offline": false, "hideRfBrowser": false}</msg>
-<msg timestamp="20211202 15:43:57.089" level="INFO">Successfully created context. </msg>
-<msg timestamp="20211202 15:43:57.089" level="INFO">{'acceptDownloads': False, 'ignoreHTTPSErrors': False, 'bypassCSP': False, 'viewport': {'width': 1920, 'height': 1080}, 'deviceScaleFactor': 1, 'isMobile': False, 'hasTouch': False, 'javaScriptEnabled': True, 'offline': False, 'hideRfBrowser': False}</msg>
-<status status="PASS" starttime="20211202 15:43:57.079" endtime="20211202 15:43:57.090"/>
+<msg timestamp="20211203 14:21:41.945" level="INFO">{"acceptDownloads": false, "ignoreHTTPSErrors": false, "bypassCSP": false, "viewport": {"height": 1080, "width": 1920}, "deviceScaleFactor": 1.0, "isMobile": false, "hasTouch": false, "javaScriptEnabled": true, "offline": false, "hideRfBrowser": false}</msg>
+<msg timestamp="20211203 14:21:41.953" level="INFO">Successfully created context. </msg>
+<msg timestamp="20211203 14:21:41.955" level="INFO">{'acceptDownloads': False, 'ignoreHTTPSErrors': False, 'bypassCSP': False, 'viewport': {'height': 1080, 'width': 1920}, 'deviceScaleFactor': 1, 'isMobile': False, 'hasTouch': False, 'javaScriptEnabled': True, 'offline': False, 'hideRfBrowser': False}</msg>
+<status status="PASS" starttime="20211203 14:21:41.944" endtime="20211203 14:21:41.955"/>
 </kw>
 <kw name="New Page" library="Browser">
 <arg>https://yodapp-testing.vercel.app</arg>
@@ -230,10 +248,15 @@ Returns a stable identifier for the created page.</doc>
 <doc>Open a new Page. A Page is the Playwright equivalent to a tab.
 See `Browser, Context and Page` for more information about Page concept.
 Returns a stable identifier for the created page.</doc>
-<msg timestamp="20211202 15:43:57.815" level="INFO">Successfully initialized new page object and opened url: https://yodapp-testing.vercel.app</msg>
-<status status="PASS" starttime="20211202 15:43:57.090" endtime="20211202 15:43:57.815"/>
+<msg timestamp="20211203 14:21:43.792" level="INFO">Successfully initialized new page object and opened url: https://yodapp-testing.vercel.app</msg>
+<status status="PASS" starttime="20211203 14:21:41.955" endtime="20211203 14:21:43.792"/>
 </kw>
-<status status="PASS" starttime="20211202 15:43:56.793" endtime="20211202 15:43:57.815"/>
+<status status="PASS" starttime="20211203 14:21:41.631" endtime="20211203 14:21:43.792"/>
+</kw>
+<kw name="Factory Darth Vader" library="users">
+<var>${user}</var>
+<msg timestamp="20211203 14:21:43.793" level="INFO">${user} = {'name': 'Darth Vader', 'email': 'vader&amp;darth.com', 'ordem': 'Sith', 'bdate': 'dezembro-1980-15', 'insta': '@darthzinho'}</msg>
+<status status="PASS" starttime="20211203 14:21:43.793" endtime="20211203 14:21:43.793"/>
 </kw>
 <kw name="Go To User Form" library="actions">
 <kw name="Click" library="Browser">
@@ -241,7 +264,7 @@ Returns a stable identifier for the created page.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20211202 15:43:57.817" endtime="20211202 15:43:57.915"/>
+<status status="PASS" starttime="20211203 14:21:43.795" endtime="20211203 14:21:43.849"/>
 </kw>
 <kw name="Wait For Elements State" library="Browser">
 <arg>css=.card-header-title &gt;&gt; text=Cadastrar novo usuário</arg>
@@ -250,60 +273,56 @@ Returns a stable identifier for the created page.</doc>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20211202 15:43:58.074" level="INFO">Waited for Element with selector css=.card-header-title &gt;&gt; text=Cadastrar novo usuário at state visible</msg>
-<status status="PASS" starttime="20211202 15:43:57.915" endtime="20211202 15:43:58.074"/>
+<msg timestamp="20211203 14:21:43.986" level="INFO">Waited for Element with selector css=.card-header-title &gt;&gt; text=Cadastrar novo usuário at state visible</msg>
+<status status="PASS" starttime="20211203 14:21:43.849" endtime="20211203 14:21:43.986"/>
 </kw>
-<status status="PASS" starttime="20211202 15:43:57.816" endtime="20211202 15:43:58.074"/>
+<status status="PASS" starttime="20211203 14:21:43.794" endtime="20211203 14:21:43.986"/>
 </kw>
 <kw name="Fill User Form" library="actions">
-<arg>Darth Vader</arg>
-<arg>vader&amp;darth.com</arg>
-<arg>Sith</arg>
-<arg>dezembro-1980-15</arg>
-<arg>@darthzinho</arg>
+<arg>${user}</arg>
 <kw name="Fill Text" library="Browser">
 <arg>css=input[name="nome"]</arg>
-<arg>${name}</arg>
+<arg>${user}[name]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211202 15:43:58.075" level="INFO">Fills the text 'Darth Vader' in the given field.</msg>
-<status status="PASS" starttime="20211202 15:43:58.075" endtime="20211202 15:43:58.094"/>
+<msg timestamp="20211203 14:21:43.987" level="INFO">Fills the text 'Darth Vader' in the given field.</msg>
+<status status="PASS" starttime="20211203 14:21:43.987" endtime="20211203 14:21:44.005"/>
 </kw>
 <kw name="Fill Text" library="Browser">
 <arg>css=input[name="email"]</arg>
-<arg>${email}</arg>
+<arg>${user}[email]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211202 15:43:58.094" level="INFO">Fills the text 'vader&amp;darth.com' in the given field.</msg>
-<status status="PASS" starttime="20211202 15:43:58.094" endtime="20211202 15:43:58.115"/>
+<msg timestamp="20211203 14:21:44.006" level="INFO">Fills the text 'vader&amp;darth.com' in the given field.</msg>
+<status status="PASS" starttime="20211203 14:21:44.005" endtime="20211203 14:21:44.022"/>
 </kw>
 <kw name="Select Options By" library="Browser">
 <arg>css=.ordem select</arg>
 <arg>text</arg>
-<arg>${ordem}</arg>
+<arg>${user}[ordem]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Selects options from select element found by ``selector``.</doc>
-<status status="PASS" starttime="20211202 15:43:58.115" endtime="20211202 15:43:58.133"/>
+<status status="PASS" starttime="20211203 14:21:44.022" endtime="20211203 14:21:44.035"/>
 </kw>
 <kw name="Select Birth Date" library="actions">
-<arg>${bdate}</arg>
+<arg>${user}[bdate]</arg>
 <kw name="Split String" library="String">
 <var>@{date}</var>
 <arg>${text_date}</arg>
 <arg>-</arg>
 <doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
-<msg timestamp="20211202 15:43:58.134" level="INFO">@{date} = [ dezembro | 1980 | 15 ]</msg>
-<status status="PASS" starttime="20211202 15:43:58.134" endtime="20211202 15:43:58.134"/>
+<msg timestamp="20211203 14:21:44.036" level="INFO">@{date} = [ dezembro | 1980 | 15 ]</msg>
+<status status="PASS" starttime="20211203 14:21:44.036" endtime="20211203 14:21:44.036"/>
 </kw>
 <kw name="Click" library="Browser">
 <arg>css=input[name="Data de nascimento"]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20211202 15:43:58.134" endtime="20211202 15:43:58.257"/>
+<status status="PASS" starttime="20211203 14:21:44.036" endtime="20211203 14:21:44.160"/>
 </kw>
 <kw name="Select Options By" library="Browser">
 <arg>xpath=(//header[@class="datepicker-header"]//select)[1]</arg>
@@ -312,7 +331,7 @@ Returns a stable identifier for the created page.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Selects options from select element found by ``selector``.</doc>
-<status status="PASS" starttime="20211202 15:43:58.257" endtime="20211202 15:43:58.267"/>
+<status status="PASS" starttime="20211203 14:21:44.160" endtime="20211203 14:21:44.169"/>
 </kw>
 <kw name="Select Options By" library="Browser">
 <arg>xpath=(//header[@class="datepicker-header"]//select)[2]</arg>
@@ -321,27 +340,27 @@ Returns a stable identifier for the created page.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Selects options from select element found by ``selector``.</doc>
-<status status="PASS" starttime="20211202 15:43:58.267" endtime="20211202 15:43:58.285"/>
+<status status="PASS" starttime="20211203 14:21:44.169" endtime="20211203 14:21:44.189"/>
 </kw>
 <kw name="Click" library="Browser">
 <arg>xpath=//a[contains(@class, "datepicker-cell")]//span[text()="${date}[2]"]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20211202 15:43:58.285" endtime="20211202 15:43:58.346"/>
+<status status="PASS" starttime="20211203 14:21:44.189" endtime="20211203 14:21:44.240"/>
 </kw>
-<status status="PASS" starttime="20211202 15:43:58.134" endtime="20211202 15:43:58.347"/>
+<status status="PASS" starttime="20211203 14:21:44.036" endtime="20211203 14:21:44.240"/>
 </kw>
 <kw name="Fill Text" library="Browser">
 <arg>id=insta</arg>
-<arg>${insta}</arg>
+<arg>${user}[insta]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211202 15:43:58.349" level="INFO">Fills the text '@darthzinho' in the given field.</msg>
-<status status="PASS" starttime="20211202 15:43:58.347" endtime="20211202 15:43:58.369"/>
+<msg timestamp="20211203 14:21:44.241" level="INFO">Fills the text '@darthzinho' in the given field.</msg>
+<status status="PASS" starttime="20211203 14:21:44.240" endtime="20211203 14:21:44.260"/>
 </kw>
-<status status="PASS" starttime="20211202 15:43:58.075" endtime="20211202 15:43:58.369"/>
+<status status="PASS" starttime="20211203 14:21:43.987" endtime="20211203 14:21:44.260"/>
 </kw>
 <kw name="Check Accept Comunications" library="actions">
 <kw name="Click" library="Browser">
@@ -349,9 +368,9 @@ Returns a stable identifier for the created page.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20211202 15:43:58.370" endtime="20211202 15:43:58.524"/>
+<status status="PASS" starttime="20211203 14:21:44.261" endtime="20211203 14:21:44.392"/>
 </kw>
-<status status="PASS" starttime="20211202 15:43:58.370" endtime="20211202 15:43:58.524"/>
+<status status="PASS" starttime="20211203 14:21:44.260" endtime="20211203 14:21:44.392"/>
 </kw>
 <kw name="Submit User Form" library="actions">
 <kw name="Click" library="Browser">
@@ -359,38 +378,55 @@ Returns a stable identifier for the created page.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20211202 15:43:58.525" endtime="20211202 15:43:58.576"/>
+<status status="PASS" starttime="20211203 14:21:44.393" endtime="20211203 14:21:44.441"/>
 </kw>
-<status status="PASS" starttime="20211202 15:43:58.525" endtime="20211202 15:43:58.576"/>
+<status status="PASS" starttime="20211203 14:21:44.393" endtime="20211203 14:21:44.441"/>
 </kw>
 <kw name="Toaster Message Should Be" library="actions">
 <arg>Oops! O email é incorreto.</arg>
+<kw name="Set Variable" library="BuiltIn">
+<var>${element}</var>
+<arg>css=.toast div</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20211203 14:21:44.442" level="INFO">${element} = css=.toast div</msg>
+<status status="PASS" starttime="20211203 14:21:44.442" endtime="20211203 14:21:44.442"/>
+</kw>
 <kw name="Wait For Elements State" library="Browser">
-<arg>css=.toast div &gt;&gt; text=${expected_message}</arg>
+<arg>${element}</arg>
 <arg>visible</arg>
 <arg>5</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20211202 15:43:58.582" level="INFO">Waited for Element with selector css=.toast div &gt;&gt; text=Oops! O email é incorreto. at state visible</msg>
-<status status="PASS" starttime="20211202 15:43:58.577" endtime="20211202 15:43:58.583"/>
+<msg timestamp="20211203 14:21:44.449" level="INFO">Waited for Element with selector css=.toast div at state visible</msg>
+<status status="PASS" starttime="20211203 14:21:44.442" endtime="20211203 14:21:44.449"/>
 </kw>
-<status status="PASS" starttime="20211202 15:43:58.577" endtime="20211202 15:43:58.583"/>
+<kw name="Get Text" library="Browser">
+<arg>${element}</arg>
+<arg>equal</arg>
+<arg>${expected_message}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20211203 14:21:44.449" endtime="20211203 14:21:44.462"/>
+</kw>
+<status status="PASS" starttime="20211203 14:21:44.441" endtime="20211203 14:21:44.462"/>
 </kw>
 <kw name="End Session" library="base" type="TEARDOWN">
 <kw name="Take Screenshot" library="Browser">
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20211202 15:43:58.756" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-2.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211202 15:43:58.583" endtime="20211202 15:43:58.757"/>
+<msg timestamp="20211203 14:21:44.654" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-2.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211203 14:21:44.463" endtime="20211203 14:21:44.654"/>
 </kw>
-<status status="PASS" starttime="20211202 15:43:58.583" endtime="20211202 15:43:58.757"/>
+<status status="PASS" starttime="20211203 14:21:44.462" endtime="20211203 14:21:44.654"/>
 </kw>
 <tag>inv-email</tag>
-<status status="PASS" starttime="20211202 15:43:56.788" endtime="20211202 15:43:58.758"/>
+<status status="PASS" starttime="20211203 14:21:41.625" endtime="20211203 14:21:44.655"/>
 </test>
 <doc>Suíte de testes para cadastro de personagens</doc>
-<status status="PASS" starttime="20211202 15:43:54.030" endtime="20211202 15:43:58.820"/>
+<status status="PASS" starttime="20211203 14:21:35.582" endtime="20211203 14:21:44.711"/>
 </suite>
 <suite id="s1-s2" name="Online" source="C:\Projects\yodapp\tests\online.robot">
 <test id="s1-s2-t1" name="Yodapp deve estar online">
@@ -401,19 +437,19 @@ Returns a stable identifier for the created page.</doc>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<msg timestamp="20211202 15:43:58.835" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\Projects\\yodapp\\logs\\browser\\traces\\38908799-252c-4643-b42b-abb8ed512f7a"}</msg>
-<msg timestamp="20211202 15:43:59.098" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\Projects\\yodapp\\logs\\browser\\traces\\38908799-252c-4643-b42b-abb8ed512f7a"}</msg>
-<status status="PASS" starttime="20211202 15:43:58.834" endtime="20211202 15:43:59.098"/>
+<msg timestamp="20211203 14:21:44.729" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\Projects\\yodapp\\logs\\browser\\traces\\db718e67-40d9-4be8-b802-19cb3d8ccd71"}</msg>
+<msg timestamp="20211203 14:21:45.016" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\Projects\\yodapp\\logs\\browser\\traces\\db718e67-40d9-4be8-b802-19cb3d8ccd71"}</msg>
+<status status="PASS" starttime="20211203 14:21:44.729" endtime="20211203 14:21:45.016"/>
 </kw>
 <kw name="New Context" library="Browser">
 <arg>viewport={'width': 1920, 'height': 1080}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<msg timestamp="20211202 15:43:59.099" level="INFO">{"acceptDownloads": false, "ignoreHTTPSErrors": false, "bypassCSP": false, "viewport": {"width": 1920, "height": 1080}, "deviceScaleFactor": 1.0, "isMobile": false, "hasTouch": false, "javaScriptEnabled": true, "offline": false, "hideRfBrowser": false}</msg>
-<msg timestamp="20211202 15:43:59.112" level="INFO">Successfully created context. </msg>
-<msg timestamp="20211202 15:43:59.112" level="INFO">{'acceptDownloads': False, 'ignoreHTTPSErrors': False, 'bypassCSP': False, 'viewport': {'width': 1920, 'height': 1080}, 'deviceScaleFactor': 1, 'isMobile': False, 'hasTouch': False, 'javaScriptEnabled': True, 'offline': False, 'hideRfBrowser': False}</msg>
-<status status="PASS" starttime="20211202 15:43:59.098" endtime="20211202 15:43:59.112"/>
+<msg timestamp="20211203 14:21:45.017" level="INFO">{"acceptDownloads": false, "ignoreHTTPSErrors": false, "bypassCSP": false, "viewport": {"height": 1080, "width": 1920}, "deviceScaleFactor": 1.0, "isMobile": false, "hasTouch": false, "javaScriptEnabled": true, "offline": false, "hideRfBrowser": false}</msg>
+<msg timestamp="20211203 14:21:45.027" level="INFO">Successfully created context. </msg>
+<msg timestamp="20211203 14:21:45.027" level="INFO">{'acceptDownloads': False, 'ignoreHTTPSErrors': False, 'bypassCSP': False, 'viewport': {'height': 1080, 'width': 1920}, 'deviceScaleFactor': 1, 'isMobile': False, 'hasTouch': False, 'javaScriptEnabled': True, 'offline': False, 'hideRfBrowser': False}</msg>
+<status status="PASS" starttime="20211203 14:21:45.017" endtime="20211203 14:21:45.027"/>
 </kw>
 <kw name="New Page" library="Browser">
 <arg>https://yodapp-testing.vercel.app</arg>
@@ -422,10 +458,10 @@ Returns a stable identifier for the created page.</doc>
 <doc>Open a new Page. A Page is the Playwright equivalent to a tab.
 See `Browser, Context and Page` for more information about Page concept.
 Returns a stable identifier for the created page.</doc>
-<msg timestamp="20211202 15:43:59.842" level="INFO">Successfully initialized new page object and opened url: https://yodapp-testing.vercel.app</msg>
-<status status="PASS" starttime="20211202 15:43:59.112" endtime="20211202 15:43:59.843"/>
+<msg timestamp="20211203 14:21:46.797" level="INFO">Successfully initialized new page object and opened url: https://yodapp-testing.vercel.app</msg>
+<status status="PASS" starttime="20211203 14:21:45.027" endtime="20211203 14:21:46.797"/>
 </kw>
-<status status="PASS" starttime="20211202 15:43:58.834" endtime="20211202 15:43:59.843"/>
+<status status="PASS" starttime="20211203 14:21:44.728" endtime="20211203 14:21:46.798"/>
 </kw>
 <kw name="Get Title" library="Browser">
 <arg>equal</arg>
@@ -434,18 +470,18 @@ Returns a stable identifier for the created page.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the title of the current page.</doc>
-<status status="PASS" starttime="20211202 15:43:59.843" endtime="20211202 15:43:59.847"/>
+<status status="PASS" starttime="20211203 14:21:46.798" endtime="20211203 14:21:46.802"/>
 </kw>
 <kw name="End Session" library="base" type="TEARDOWN">
 <kw name="Take Screenshot" library="Browser">
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20211202 15:44:00.112" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-3.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211202 15:43:59.848" endtime="20211202 15:44:00.112"/>
+<msg timestamp="20211203 14:21:47.052" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-3.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211203 14:21:46.803" endtime="20211203 14:21:47.052"/>
 </kw>
-<status status="PASS" starttime="20211202 15:43:59.848" endtime="20211202 15:44:00.113"/>
+<status status="PASS" starttime="20211203 14:21:46.803" endtime="20211203 14:21:47.052"/>
 </kw>
-<status status="PASS" starttime="20211202 15:43:58.832" endtime="20211202 15:44:00.113"/>
+<status status="PASS" starttime="20211203 14:21:44.725" endtime="20211203 14:21:47.052"/>
 </test>
 <test id="s1-s2-t2" name="Validar mensagem de boas vindas">
 <kw name="Start Session" library="base" type="SETUP">
@@ -455,19 +491,19 @@ Returns a stable identifier for the created page.</doc>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<msg timestamp="20211202 15:44:00.173" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\Projects\\yodapp\\logs\\browser\\traces\\db9ae79f-c083-48a6-a62b-b59cafc44466"}</msg>
-<msg timestamp="20211202 15:44:00.434" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\Projects\\yodapp\\logs\\browser\\traces\\db9ae79f-c083-48a6-a62b-b59cafc44466"}</msg>
-<status status="PASS" starttime="20211202 15:44:00.172" endtime="20211202 15:44:00.435"/>
+<msg timestamp="20211203 14:21:47.110" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\Projects\\yodapp\\logs\\browser\\traces\\5ac9fdee-fc41-4a50-9fd5-0e0f481ebe93"}</msg>
+<msg timestamp="20211203 14:21:47.382" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\Projects\\yodapp\\logs\\browser\\traces\\5ac9fdee-fc41-4a50-9fd5-0e0f481ebe93"}</msg>
+<status status="PASS" starttime="20211203 14:21:47.109" endtime="20211203 14:21:47.382"/>
 </kw>
 <kw name="New Context" library="Browser">
 <arg>viewport={'width': 1920, 'height': 1080}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<msg timestamp="20211202 15:44:00.436" level="INFO">{"acceptDownloads": false, "ignoreHTTPSErrors": false, "bypassCSP": false, "viewport": {"width": 1920, "height": 1080}, "deviceScaleFactor": 1.0, "isMobile": false, "hasTouch": false, "javaScriptEnabled": true, "offline": false, "hideRfBrowser": false}</msg>
-<msg timestamp="20211202 15:44:00.446" level="INFO">Successfully created context. </msg>
-<msg timestamp="20211202 15:44:00.446" level="INFO">{'acceptDownloads': False, 'ignoreHTTPSErrors': False, 'bypassCSP': False, 'viewport': {'width': 1920, 'height': 1080}, 'deviceScaleFactor': 1, 'isMobile': False, 'hasTouch': False, 'javaScriptEnabled': True, 'offline': False, 'hideRfBrowser': False}</msg>
-<status status="PASS" starttime="20211202 15:44:00.435" endtime="20211202 15:44:00.447"/>
+<msg timestamp="20211203 14:21:47.383" level="INFO">{"acceptDownloads": false, "ignoreHTTPSErrors": false, "bypassCSP": false, "viewport": {"height": 1080, "width": 1920}, "deviceScaleFactor": 1.0, "isMobile": false, "hasTouch": false, "javaScriptEnabled": true, "offline": false, "hideRfBrowser": false}</msg>
+<msg timestamp="20211203 14:21:47.393" level="INFO">Successfully created context. </msg>
+<msg timestamp="20211203 14:21:47.393" level="INFO">{'acceptDownloads': False, 'ignoreHTTPSErrors': False, 'bypassCSP': False, 'viewport': {'height': 1080, 'width': 1920}, 'deviceScaleFactor': 1, 'isMobile': False, 'hasTouch': False, 'javaScriptEnabled': True, 'offline': False, 'hideRfBrowser': False}</msg>
+<status status="PASS" starttime="20211203 14:21:47.383" endtime="20211203 14:21:47.393"/>
 </kw>
 <kw name="New Page" library="Browser">
 <arg>https://yodapp-testing.vercel.app</arg>
@@ -476,10 +512,10 @@ Returns a stable identifier for the created page.</doc>
 <doc>Open a new Page. A Page is the Playwright equivalent to a tab.
 See `Browser, Context and Page` for more information about Page concept.
 Returns a stable identifier for the created page.</doc>
-<msg timestamp="20211202 15:44:01.191" level="INFO">Successfully initialized new page object and opened url: https://yodapp-testing.vercel.app</msg>
-<status status="PASS" starttime="20211202 15:44:00.447" endtime="20211202 15:44:01.191"/>
+<msg timestamp="20211203 14:21:49.216" level="INFO">Successfully initialized new page object and opened url: https://yodapp-testing.vercel.app</msg>
+<status status="PASS" starttime="20211203 14:21:47.394" endtime="20211203 14:21:49.216"/>
 </kw>
-<status status="PASS" starttime="20211202 15:44:00.171" endtime="20211202 15:44:01.192"/>
+<status status="PASS" starttime="20211203 14:21:47.109" endtime="20211203 14:21:49.216"/>
 </kw>
 <kw name="Wait For Elements State" library="Browser">
 <arg>css=.navbar-item &gt;&gt; text=Que a Força (qualidade) esteja com você!</arg>
@@ -488,24 +524,24 @@ Returns a stable identifier for the created page.</doc>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20211202 15:44:01.211" level="INFO">Waited for Element with selector css=.navbar-item &gt;&gt; text=Que a Força (qualidade) esteja com você! at state visible</msg>
-<status status="PASS" starttime="20211202 15:44:01.192" endtime="20211202 15:44:01.211"/>
+<msg timestamp="20211203 14:21:49.236" level="INFO">Waited for Element with selector css=.navbar-item &gt;&gt; text=Que a Força (qualidade) esteja com você! at state visible</msg>
+<status status="PASS" starttime="20211203 14:21:49.218" endtime="20211203 14:21:49.236"/>
 </kw>
 <kw name="End Session" library="base" type="TEARDOWN">
 <kw name="Take Screenshot" library="Browser">
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20211202 15:44:01.507" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-4.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211202 15:44:01.212" endtime="20211202 15:44:01.507"/>
+<msg timestamp="20211203 14:21:49.494" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-4.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211203 14:21:49.237" endtime="20211203 14:21:49.494"/>
 </kw>
-<status status="PASS" starttime="20211202 15:44:01.211" endtime="20211202 15:44:01.507"/>
+<status status="PASS" starttime="20211203 14:21:49.236" endtime="20211203 14:21:49.494"/>
 </kw>
-<status status="PASS" starttime="20211202 15:44:00.169" endtime="20211202 15:44:01.509"/>
+<status status="PASS" starttime="20211203 14:21:47.106" endtime="20211203 14:21:49.495"/>
 </test>
 <doc>Suíte de testes para verificar se o Yodapp está online</doc>
-<status status="PASS" starttime="20211202 15:43:58.826" endtime="20211202 15:44:01.564"/>
+<status status="PASS" starttime="20211203 14:21:44.714" endtime="20211203 14:21:49.539"/>
 </suite>
-<status status="PASS" starttime="20211202 15:43:54.012" endtime="20211202 15:44:01.567"/>
+<status status="PASS" starttime="20211203 14:21:35.560" endtime="20211203 14:21:49.548"/>
 </suite>
 <statistics>
 <total>
