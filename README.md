@@ -1,3 +1,1 @@
-Repositório de estudos do RobotFramework para aplicações WEB.
-
-    #Exclusivo para estudos.
+Repositório exclusivo para estudos do RobotFramework, para aplicações WEB.
