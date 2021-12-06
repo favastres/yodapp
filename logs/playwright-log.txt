@@ -1,81 +1,35 @@
-{"level":30,"time":"2021-12-03T17:21:36.456Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Listening on 60295"}
-{"level":30,"time":"2021-12-03T17:21:38.049Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2021-12-03T17:21:38.049Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Trace file: "}
-{"level":30,"time":"2021-12-03T17:21:38.079Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Changed active context"}
-{"level":30,"time":"2021-12-03T17:21:38.082Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2021-12-03T17:21:38.755Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Video path: undefined"}
-{"level":30,"time":"2021-12-03T17:21:38.755Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Changed active page"}
-{"level":30,"time":"2021-12-03T17:21:40.609Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with text=Novo in page."}
-{"level":30,"time":"2021-12-03T17:21:40.684Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with css=.card-header-title >> text=Cadastrar novo usuário in page."}
-{"level":30,"time":"2021-12-03T17:21:40.851Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with css=input[name=\"nome\"] in page."}
-{"level":30,"time":"2021-12-03T17:21:40.874Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with css=input[name=\"email\"] in page."}
-{"level":30,"time":"2021-12-03T17:21:40.893Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with css=.ordem select in page."}
-{"level":30,"time":"2021-12-03T17:21:40.911Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with css=input[name=\"Data de nascimento\"] in page."}
-{"level":30,"time":"2021-12-03T17:21:41.011Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with xpath=(//header[@class=\"datepicker-header\"]//select)[1] in page."}
-{"level":30,"time":"2021-12-03T17:21:41.036Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with xpath=(//header[@class=\"datepicker-header\"]//select)[2] in page."}
-{"level":30,"time":"2021-12-03T17:21:41.054Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with xpath=//a[contains(@class, \"datepicker-cell\")]//span[text()=\"20\"] in page."}
-{"level":30,"time":"2021-12-03T17:21:41.110Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with id=insta in page."}
-{"level":30,"time":"2021-12-03T17:21:41.133Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with xpath=//input[@value=\"Cavaleiro Jedi\"]/..//span[@class=\"check\"] in page."}
-{"level":30,"time":"2021-12-03T17:21:41.189Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with xpath=//input[@name=\"comunications\"]/../span[@class=\"check\"] in page."}
-{"level":30,"time":"2021-12-03T17:21:41.277Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with css=button >> text=Cadastrar in page."}
-{"level":30,"time":"2021-12-03T17:21:41.330Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with css=.toast div in page."}
-{"level":30,"time":"2021-12-03T17:21:41.336Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with css=.toast div in page."}
-{"level":30,"time":"2021-12-03T17:21:41.348Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Retrieved text for element css=.toast div containing Usuário cadastrado com sucesso!"}
-{"level":30,"time":"2021-12-03T17:21:41.562Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Changed active context"}
-{"level":30,"time":"2021-12-03T17:21:41.562Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Changing current active page"}
-{"level":30,"time":"2021-12-03T17:21:41.562Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Changed active page"}
-{"level":30,"time":"2021-12-03T17:21:41.574Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Changed active context"}
-{"level":30,"time":"2021-12-03T17:21:41.574Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Changing current active page"}
-{"level":30,"time":"2021-12-03T17:21:41.574Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Changed active page"}
-{"level":30,"time":"2021-12-03T17:21:41.944Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2021-12-03T17:21:41.945Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Trace file: "}
-{"level":30,"time":"2021-12-03T17:21:41.951Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Changed active context"}
-{"level":30,"time":"2021-12-03T17:21:41.956Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2021-12-03T17:21:42.075Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Video path: undefined"}
-{"level":30,"time":"2021-12-03T17:21:42.075Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Changed active page"}
-{"level":30,"time":"2021-12-03T17:21:43.796Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with text=Novo in page."}
-{"level":30,"time":"2021-12-03T17:21:43.850Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with css=.card-header-title >> text=Cadastrar novo usuário in page."}
-{"level":30,"time":"2021-12-03T17:21:43.987Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with css=input[name=\"nome\"] in page."}
-{"level":30,"time":"2021-12-03T17:21:44.005Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with css=input[name=\"email\"] in page."}
-{"level":30,"time":"2021-12-03T17:21:44.022Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with css=.ordem select in page."}
-{"level":30,"time":"2021-12-03T17:21:44.036Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with css=input[name=\"Data de nascimento\"] in page."}
-{"level":30,"time":"2021-12-03T17:21:44.160Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with xpath=(//header[@class=\"datepicker-header\"]//select)[1] in page."}
-{"level":30,"time":"2021-12-03T17:21:44.169Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with xpath=(//header[@class=\"datepicker-header\"]//select)[2] in page."}
-{"level":30,"time":"2021-12-03T17:21:44.189Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with xpath=//a[contains(@class, \"datepicker-cell\")]//span[text()=\"15\"] in page."}
-{"level":30,"time":"2021-12-03T17:21:44.240Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with id=insta in page."}
-{"level":30,"time":"2021-12-03T17:21:44.261Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with xpath=//input[@name=\"comunications\"]/../span[@class=\"check\"] in page."}
-{"level":30,"time":"2021-12-03T17:21:44.393Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with css=button >> text=Cadastrar in page."}
-{"level":30,"time":"2021-12-03T17:21:44.442Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with css=.toast div in page."}
-{"level":30,"time":"2021-12-03T17:21:44.449Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with css=.toast div in page."}
-{"level":30,"time":"2021-12-03T17:21:44.460Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Retrieved text for element css=.toast div containing Oops! O email é incorreto."}
-{"level":30,"time":"2021-12-03T17:21:44.658Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Changed active context"}
-{"level":30,"time":"2021-12-03T17:21:44.658Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Changing current active page"}
-{"level":30,"time":"2021-12-03T17:21:44.658Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Changed active page"}
-{"level":30,"time":"2021-12-03T17:21:44.668Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Changed active context"}
-{"level":30,"time":"2021-12-03T17:21:44.668Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Changing current active page"}
-{"level":30,"time":"2021-12-03T17:21:44.668Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Changed active page"}
-{"level":30,"time":"2021-12-03T17:21:45.017Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2021-12-03T17:21:45.017Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Trace file: "}
-{"level":30,"time":"2021-12-03T17:21:45.025Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Changed active context"}
-{"level":30,"time":"2021-12-03T17:21:45.027Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2021-12-03T17:21:45.125Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Video path: undefined"}
-{"level":30,"time":"2021-12-03T17:21:45.126Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Changed active page"}
-{"level":30,"time":"2021-12-03T17:21:47.057Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Changed active context"}
-{"level":30,"time":"2021-12-03T17:21:47.057Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Changing current active page"}
-{"level":30,"time":"2021-12-03T17:21:47.057Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Changed active page"}
-{"level":30,"time":"2021-12-03T17:21:47.072Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Changed active context"}
-{"level":30,"time":"2021-12-03T17:21:47.072Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Changing current active page"}
-{"level":30,"time":"2021-12-03T17:21:47.072Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Changed active page"}
-{"level":30,"time":"2021-12-03T17:21:47.383Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2021-12-03T17:21:47.384Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Trace file: "}
-{"level":30,"time":"2021-12-03T17:21:47.391Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Changed active context"}
-{"level":30,"time":"2021-12-03T17:21:47.394Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2021-12-03T17:21:47.530Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Video path: undefined"}
-{"level":30,"time":"2021-12-03T17:21:47.530Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Changed active page"}
-{"level":30,"time":"2021-12-03T17:21:49.218Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with css=.navbar-item >> text=Que a Força (qualidade) esteja com você! in page."}
-{"level":30,"time":"2021-12-03T17:21:49.496Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Changed active context"}
-{"level":30,"time":"2021-12-03T17:21:49.496Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Changing current active page"}
-{"level":30,"time":"2021-12-03T17:21:49.496Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Changed active page"}
-{"level":30,"time":"2021-12-03T17:21:49.503Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Changed active context"}
-{"level":30,"time":"2021-12-03T17:21:49.503Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Changing current active page"}
-{"level":30,"time":"2021-12-03T17:21:49.503Z","pid":14076,"hostname":"NB5ZVD4K3","msg":"Changed active page"}
+{"level":30,"time":"2021-12-06T17:15:30.955Z","pid":4216,"hostname":"NB5ZVD4K3","msg":"Listening on 60323"}
+{"level":30,"time":"2021-12-06T17:15:31.499Z","pid":4216,"hostname":"NB5ZVD4K3","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-12-06T17:15:31.499Z","pid":4216,"hostname":"NB5ZVD4K3","msg":"Trace file: "}
+{"level":30,"time":"2021-12-06T17:15:31.509Z","pid":4216,"hostname":"NB5ZVD4K3","msg":"Changed active context"}
+{"level":30,"time":"2021-12-06T17:15:31.514Z","pid":4216,"hostname":"NB5ZVD4K3","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-12-06T17:15:31.629Z","pid":4216,"hostname":"NB5ZVD4K3","msg":"Video path: undefined"}
+{"level":30,"time":"2021-12-06T17:15:31.629Z","pid":4216,"hostname":"NB5ZVD4K3","msg":"Changed active page"}
+{"level":30,"time":"2021-12-06T17:15:32.292Z","pid":4216,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with text=Novo in page."}
+{"level":30,"time":"2021-12-06T17:15:32.404Z","pid":4216,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with css=.card-header-title >> text=Cadastrar novo usuário in page."}
+{"level":30,"time":"2021-12-06T17:15:32.568Z","pid":4216,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with css=input[name=\"nome\"] in page."}
+{"level":30,"time":"2021-12-06T17:15:32.588Z","pid":4216,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with css=input[name=\"email\"] in page."}
+{"level":30,"time":"2021-12-06T17:15:32.609Z","pid":4216,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with css=.ordem select in page."}
+{"level":30,"time":"2021-12-06T17:15:32.631Z","pid":4216,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with css=input[name=\"Data de nascimento\"] in page."}
+{"level":30,"time":"2021-12-06T17:15:32.756Z","pid":4216,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with xpath=(//header[@class=\"datepicker-header\"]//select)[1] in page."}
+{"level":30,"time":"2021-12-06T17:15:32.778Z","pid":4216,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with xpath=(//header[@class=\"datepicker-header\"]//select)[2] in page."}
+{"level":30,"time":"2021-12-06T17:15:32.804Z","pid":4216,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with xpath=//a[contains(@class, \"datepicker-cell\")]//span[text()=\"20\"] in page."}
+{"level":30,"time":"2021-12-06T17:15:32.874Z","pid":4216,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with id=insta in page."}
+{"level":30,"time":"2021-12-06T17:15:32.900Z","pid":4216,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with xpath=//input[@value=\"Cavaleiro Jedi\"]/..//span[@class=\"check\"] in page."}
+{"level":30,"time":"2021-12-06T17:15:32.948Z","pid":4216,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with xpath=//input[@name=\"comunications\"]/../span[@class=\"check\"] in page."}
+{"level":30,"time":"2021-12-06T17:15:33.105Z","pid":4216,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with css=button >> text=Cadastrar in page."}
+{"level":30,"time":"2021-12-06T17:15:33.182Z","pid":4216,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with css=.toast div in page."}
+{"level":30,"time":"2021-12-06T17:15:33.190Z","pid":4216,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with css=.toast div in page."}
+{"level":30,"time":"2021-12-06T17:15:33.215Z","pid":4216,"hostname":"NB5ZVD4K3","msg":"Retrieved text for element css=.toast div containing Usuário cadastrado com sucesso!"}
+{"level":30,"time":"2021-12-06T17:15:33.317Z","pid":4216,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with css=.carousel in page."}
+{"level":30,"time":"2021-12-06T17:15:33.339Z","pid":4216,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with xpath=//td[contains(text(), \"yodinha@jedi.com\")]/.. in page."}
+{"level":30,"time":"2021-12-06T17:15:33.350Z","pid":4216,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with xpath=//td[contains(text(), \"yodinha@jedi.com\")]/.. in page."}
+{"level":30,"time":"2021-12-06T17:15:33.365Z","pid":4216,"hostname":"NB5ZVD4K3","msg":"Retrieved text for element xpath=//td[contains(text(), \"yodinha@jedi.com\")]/.. containing  Mestre Yoda\tyodinha@jedi.com\t20/02/1970\t@yodinha\t"}
+{"level":30,"time":"2021-12-06T17:15:33.367Z","pid":4216,"hostname":"NB5ZVD4K3","msg":"Strict mode is enabled, find Locator with xpath=//td[contains(text(), \"yodinha@jedi.com\")]/.. in page."}
+{"level":30,"time":"2021-12-06T17:15:33.373Z","pid":4216,"hostname":"NB5ZVD4K3","msg":"Retrieved text for element xpath=//td[contains(text(), \"yodinha@jedi.com\")]/.. containing  Mestre Yoda\tyodinha@jedi.com\t20/02/1970\t@yodinha\t"}
+{"level":30,"time":"2021-12-06T17:15:33.656Z","pid":4216,"hostname":"NB5ZVD4K3","msg":"Changed active context"}
+{"level":30,"time":"2021-12-06T17:15:33.656Z","pid":4216,"hostname":"NB5ZVD4K3","msg":"Changing current active page"}
+{"level":30,"time":"2021-12-06T17:15:33.656Z","pid":4216,"hostname":"NB5ZVD4K3","msg":"Changed active page"}
+{"level":30,"time":"2021-12-06T17:15:33.672Z","pid":4216,"hostname":"NB5ZVD4K3","msg":"Changed active context"}
+{"level":30,"time":"2021-12-06T17:15:33.672Z","pid":4216,"hostname":"NB5ZVD4K3","msg":"Changing current active page"}
+{"level":30,"time":"2021-12-06T17:15:33.672Z","pid":4216,"hostname":"NB5ZVD4K3","msg":"Changed active page"}

@@ -1,7 +1,7 @@
 *Settings*
 Documentation    Suíte de testes para cadastro de personagens
 
-Library     ${EXECDIR}/resources/factories/users.py
+Library    ${EXECDIR}/resources/factories/users.py
 
 Resource    ${EXECDIR}/resources/base.robot
 
@@ -15,12 +15,13 @@ Cadastrar um novo personagem
     ${user}    Factory Yoda
 
     Go To User Form
-    Fill User Form                ${user}
-    Select Jedi                   ${user}[tpjedi]
-    Check Accept comunications
+    Fill User Form                 ${user}
+    Select Jedi                    ${user}[tpjedi]
+    Check Accept Communications
     Submit User Form
-    Toaster Message Should Be     Usuário cadastrado com sucesso!
+    Toaster Message Should Be      Usuário cadastrado com sucesso!
     Go To Home Page
+    User Should Be Visible         ${user}
 
 E-mail incorreto
     [Tags]    inv-email
@@ -28,7 +29,8 @@ E-mail incorreto
     ${user}    Factory Darth Vader
 
     Go To User Form
-    Fill User Form                ${user}
-    Check Accept Comunications
+    Fill User Form                 ${user}
+    Check Accept Communications
     Submit User Form
-    Toaster Message Should Be     Oops! O email é incorreto.    
+    Toaster Message Should Be      Oops! O email é incorreto.    
+    Go To Home Page

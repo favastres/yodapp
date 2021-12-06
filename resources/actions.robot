@@ -3,8 +3,8 @@ Documentation    Ações customizadas para rodar o yodapp
 
 *Keywords*
 Go To Home Page
-    Go To    ${base_url} 
-    Wait For Elements State     
+    Go To                      ${base_url} 
+    Wait For Elements State    css=.carousel    visible    5 
 
 Go To User Form
     Click                      text=Novo
@@ -24,7 +24,7 @@ Select Jedi
 
     Click    xpath=//input[@value="${tpjedi}"]/..//span[@class="check"]
 
-Check Accept Comunications
+Check Accept Communications
     Click    xpath=//input[@name="comunications"]/../span[@class="check"]
 
 Select Birth Date
@@ -47,3 +47,12 @@ Toaster Message Should Be
 
     Wait For Elements State    ${element}    visible    5
     Get Text                   ${element}    equal      ${expected_message}
+
+User Should Be Visible
+    [Arguments]    ${user}
+
+    ${element}    Set Variable    xpath=//td[contains(text(), "${user}[email]")]/..
+
+    Wait For Elements State    ${element}    visible     5
+    Get Text                   ${element}    contains    ${user}[name]
+    Get Text                   ${element}    contains    ${user}[email]
